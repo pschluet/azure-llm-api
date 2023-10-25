@@ -22,6 +22,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "MyTerraformResourceGroup"
+  name     = "azure-llm-api"
   location = "eastus"
 }
