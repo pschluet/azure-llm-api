@@ -7,6 +7,13 @@ terraform {
     }
   }
 
+  backend "azurerm" {
+    resource_group_name  = "llm-test"
+    storage_account_name = "llmtest9008163138"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
+  }
+
   required_version = ">= 1.1.0"
 }
 
